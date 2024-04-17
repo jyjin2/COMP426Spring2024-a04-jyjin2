@@ -20,7 +20,7 @@ function updateWeather(data) {
     if (data.weather) {
         weatherElement.innerHTML = `Temperature: ${data.main.temp}°C, Weather: ${data.weather[0].main}`;
     } else {
-        weatherElement.innerHTML = 'Weather data not found.';
+        weatherElement.innerHTML = 'Weather data not found. Please verify your input or try alternate locations.';
     }
 }
 
@@ -29,6 +29,6 @@ function updateNews(articles) {
     if (articles.length > 0) {
         newsElement.innerHTML = articles.map(article => `<li><a href="${article.url}" target="_blank">${article.title}</a></li>`).join('');
     } else {
-        newsElement.innerHTML = 'No news found.';
+        newsElement.innerHTML = 'No news found. Please verify your input or try alternate locations.';
     }
 }

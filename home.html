@@ -1,6 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and News Dashboard</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <h1>Weather and News Dashboard</h1>
+    <div>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="fetchData()">Get Info</button>
+    </div>
+    <div id="weather">
+        <h2>Weather Info</h2>
+        <p id="weatherData">No data yet.</p>
+    </div>
+    <div id="news">
+        <h2>News Headlines</h2>
+        <ul id="newsData">No news yet.</ul>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
